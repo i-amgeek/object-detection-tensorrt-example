@@ -15,7 +15,7 @@ else
 	tar -xf VOCtest_06-Nov-2007.tar
 fi
 
-# Build the dockerfile for the engironment 
+# Build the dockerfile for the environment 
 if [ ! -z $(docker images -q object_detection_webcam:latest) ]; then 
 	echo "Dockerfile has already been built"
 else
